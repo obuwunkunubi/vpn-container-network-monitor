@@ -10,6 +10,8 @@ A robust monitoring script that ensures your VPN container and dependent service
 
 This script monitors a VPN container and its dependent services to ensure everything stays connected and functioning properly. It's specifically designed for container setups where dependent containers are connected to a VPN container's network, with their ports being exposed through the VPN container. If a service loses connectivity, the script will automatically attempt to restart it.
 
+> **Note:** This script was developed as a workaround for [Gluetun VPN issue #641](https://github.com/qdm12/gluetun/issues/641) where containers in the VPN network sometimes lose connectivity while the VPN container remains running.
+
 ### Key Features
 
 - ✅ Checks if VPN container is running and connected
